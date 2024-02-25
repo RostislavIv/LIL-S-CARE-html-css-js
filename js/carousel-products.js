@@ -1,4 +1,4 @@
-// Similar Products Carousel
+// Carousel Products
 (function ($) {
   "use strict";
   $(".vegetable-carousel").owlCarousel({

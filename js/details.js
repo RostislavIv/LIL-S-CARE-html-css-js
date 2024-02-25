@@ -13,7 +13,7 @@ heartIcon.addEventListener("click", function () {
   }
 });
 
-// Change plus/minus sign on click
+// Change plus/minus sign on click for collapsible elements Ingredients and Nutritional Information
 const toggleSigns = document.querySelectorAll(".toggle-sign");
 
 for (let i = 0; i < toggleSigns.length; i++) {
