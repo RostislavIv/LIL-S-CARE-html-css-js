@@ -1,0 +1,53 @@
+/*** Similar Products Carousel Start ***/
+.vesitable .vesitable-item {
+  height: 100%;
+  transition: 0.5s;
+}
+
+.vesitable .vesitable-item:hover {
+  box-shadow: 0 0 55px rgba(0, 0, 0, 0.4);
+}
+
+.vesitable .vesitable-item .vesitable-img {
+  overflow: hidden;
+  transition: 0.5s;
+  border-radius: 10px 10px 0 0;
+}
+
+.vesitable .vesitable-item .vesitable-img img {
+  transition: 0.5s;
+}
+
+.vesitable .vesitable-item .vesitable-img img:hover {
+  transform: scale(1.2);
+}
+
+.vesitable .owl-stage {
+  margin: 50px 0;
+  position: relative;
+}
+
+.vesitable .owl-prev {
+  position: absolute;
+  top: -8px;
+  right: 50px;
+  color: rgb(var(--app-btn-bg));
+  transition: 0.5s;
+}
+
+.vesitable .owl-nav .owl-prev:hover {
+  opacity: 0.6;
+}
+
+.vesitable .owl-nav .owl-next {
+  position: absolute;
+  top: -8px;
+  right: 100px;
+  color: rgb(var(--app-btn-bg));
+  transition: 0.5s;
+}
+
+.vesitable .owl-nav .owl-next:hover {
+  opacity: 0.6;
+}
+/*** Similar Products Carousel End ***/
