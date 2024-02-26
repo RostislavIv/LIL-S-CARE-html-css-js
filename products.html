@@ -14,193 +14,230 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./css/side.css" />
-    <link rel="stylesheet" href="./css/products.css" />
-
-    <title>LIL'S CARE | handmade natural skincare</title>
-    <link
-      rel="icon"
-      sizes="192x192"
-      href="https://static.wixstatic.com/media/a6694c_487da19846414b3696763876d1233bd9%7Emv2.jpg/v1/fill/w_192%2Ch_192%2Clg_1%2Cusm_0.66_1.00_0.01/a6694c_487da19846414b3696763876d1233bd9%7Emv2.jpg"
-      type="image/jpeg"
-    />
+    <link href="./css/products.css" rel="stylesheet" />
   </head>
 
   <body>
-    <main>
-      <h2 class="text-center">ПРОДУКТИ</h2>
+    <div class="container-fluid product py-5">
+      <h1 class="mb-4 text-center">ПРОДУКТИ</h1>
+      <div class="row">
+        <!-- Filter Start-->
+        <div class="col-lg-2">
+          <h4>ФИЛТЪР</h4>
+          <div class="mb-2">
+            <input
+              type="radio"
+              class="me-2"
+              id="Categories-1"
+              name="Categories-1"
+              value="Beverages"
+            />
+            <label for="Categories-1"> за тяло</label>
+          </div>
+          <div class="mb-2">
+            <input
+              type="radio"
+              class="me-2"
+              id="Categories-2"
+              name="Categories-1"
+              value="Beverages"
+            />
+            <label for="Categories-2">за суха кожа</label>
+          </div>
+          <div class="mb-2">
+            <input
+              type="radio"
+              class="me-2"
+              id="Categories-3"
+              name="Categories-1"
+              value="Beverages"
+            />
+            <label for="Categories-3">за мазна кожа</label>
+          </div>
+          <div class="mb-2">
+            <input
+              type="radio"
+              class="me-2"
+              id="Categories-4"
+              name="Categories-1"
+              value="Beverages"
+            />
+            <label for="Categories-4">за лице</label>
+          </div>
+        </div>
+        <!--Filter End-->
+        <!-- Products Start-->
+        <div class="col-lg-10">
+          <div class="row g-5 justify-content-center">
+            <div class="col-md-6 col-lg-4 col-xl-4">
+              <div class="rounded-4 position-relative product-item border">
+                <div class="product-img">
+                  <img
+                    src="./files/products/products-image-01.jpg"
+                    class="img-fluid w-100"
+                    alt=""
+                  />
+                </div>
+                <div class="p-4">
+                  <h6>СКРАБ ЗА ТЯЛО</h6>
+                  <div class="d-flex justify-content-between flex-lg-wrap pt-4">
+                    <p class="fs-5 fw-bold mb-0">9,00 лв.</p>
+                    <a href="#" class="btn unactive-button"> Изчерпано </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 col-xl-4">
+              <div class="rounded-4 position-relative product-item border">
+                <div class="product-img">
+                  <img
+                    src="./files/products/products-image-02.jpg"
+                    class="img-fluid w-100"
+                    alt=""
+                  />
+                </div>
+                <div class="p-4">
+                  <h6>БАЛСАМ ЗА УСТНИ С ЖОЖОБА, КАКАО И ПЧЕЛЕН ВОСЪК</h6>
+                  <div class="d-flex justify-content-between flex-lg-wrap">
+                    <p class="fs-5 fw-bold mb-0">4,00 лв.</p>
+                    <a href="#" class="btn"
+                      ><i class="fa fa-shopping-bag me-2"></i> Добави в
+                      количката</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 col-xl-4">
+              <div class="rounded-4 position-relative product-item border">
+                <div class="product-img">
+                  <img
+                    src="./files/products/products-image-03.jpg"
+                    class="img-fluid w-100"
+                    alt=""
+                  />
+                </div>
+                <div class="p-4">
+                  <h6>ХИДРАТИРАЩ КРЕМ С ШИПКА</h6>
+                  <div class="d-flex justify-content-between flex-lg-wrap">
+                    <p class="fs-5 fw-bold mb-0">12,00 лв.</p>
+                    <a href="#" class="btn"
+                      ><i class="fa fa-shopping-bag me-2"></i> Добави в
+                      количката</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 col-xl-4">
+              <div class="rounded-4 position-relative product-item border">
+                <div class="product-img">
+                  <img
+                    src="./files/products/products-image-04.jpg"
+                    class="img-fluid w-100"
+                    alt=""
+                  />
+                </div>
+                <div class="p-4">
+                  <h6>НЕЖЕН ЛОСИОН С НЕВЕН</h6>
+                  <div class="d-flex justify-content-between flex-lg-wrap">
+                    <p class="fs-5 fw-bold mb-0">8,00 лв.</p>
+                    <a href="#" class="btn"
+                      ><i class="fa fa-shopping-bag me-2"></i> Добави в
+                      количката</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 col-xl-4">
+              <div class="rounded-4 position-relative product-item border">
+                <div class="product-img">
+                  <img
+                    src="./files/products/products-image-05.jpg"
+                    class="img-fluid w-100"
+                    alt=""
+                  />
+                </div>
+                <div class="p-4">
+                  <h6>ДВУФАЗНА МИЦЕЛАРНА ВОДА</h6>
+                  <div class="d-flex justify-content-between flex-lg-wrap">
+                    <p class="fs-5 fw-bold mb-0">10,00 лв.</p>
+                    <a href="#" class="btn"
+                      ><i class="fa fa-shopping-bag me-2"></i> Добави в
+                      количката</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-6 col-xl-4">
+              <div class="rounded-4 position-relative product-item border">
+                <div class="product-img">
+                  <img
+                    src="./files/products/products-image-06.jpg"
+                    class="img-fluid w-100"
+                    alt=""
+                  />
+                </div>
+                <div class="p-4">
+                  <h6>НАТУРАЛЕН КРЕМ ДЕЗОДОРАНТ</h6>
+                  <div class="d-flex justify-content-between flex-lg-wrap">
+                    <p class="fs-5 fw-bold mb-0">8,50 лв.</p>
+                    <a href="#" class="btn"
+                      ><i class="fa fa-shopping-bag me-2"></i> Добави в
+                      количката</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 col-xl-4">
+              <div class="rounded-4 position-relative product-item border">
+                <div class="product-img">
+                  <img
+                    src="./files/products/products-image-07.jpg"
+                    class="img-fluid w-100"
+                    alt=""
+                  />
+                </div>
+                <div class="p-4">
+                  <h6>СЕРУМ МАСЛО С ШИПКА И ЖОЖОБА</h6>
+                  <div class="d-flex justify-content-between flex-lg-wrap">
+                    <p class="fs-5 fw-bold mb-0">9,00 лв.</p>
+                    <a href="#" class="btn"
+                      ><i class="fa fa-shopping-bag me-2"></i> Добави в
+                      количката</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
 
-      <ul
-        class="containr"
-        style="
-          display: grid;
-          grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-          padding: 0 50px 50px 50px;
-        "
-      >
-        <li class="list-group-item m-4">
-          <a href="#" style="text-decoration: none">
-            <div style="display: flex; flex-direction: column; height: 100%">
-              <div style="position: relative">
-                <img
-                  src="https://static.wixstatic.com/media/a6694c_24a7b0d7f63d42048f5a05e97362f385~mv2.jpg"
-                  width="250"
-                  height="250"
-                  style="width: 100%; object-fit: cover; border-radius: 20px"
-                  alt=""
-                />
-                <a href="#" class="btn overlay-button">Бърз Преглед</a>
-              </div>
-              <div style="flex-grow: 1; padding: 16px 4px 4px 4px">
-                <p style="margin: 0">СКРАБ ЗА ТЯЛО</p>
-                <p style="margin: 0">9,00 лв.</p>
-              </div>
-              <div>
-                <a href="#" class="btn unactive-button"> Изчерпано </a>
+            <!-- Pagination Start-->
+            <div class="col-12">
+              <div class="pagination d-flex justify-content-center mt-5">
+                <a href="#" class="btn btn-inverce m-1">&laquo;</a>
+                <a href="#" class="btn active m-1">1</a>
+                <a href="#" class="btn btn-inverce m-1">2</a>
+                <a href="#" class="btn btn-inverce m-1">3</a>
+                <a href="#" class="btn btn-inverce m-1">4</a>
+                <a href="#" class="btn btn-inverce m-1">5</a>
+                <a href="#" class="btn btn-inverce m-1">6</a>
+                <a href="#" class="btn btn-inverce m-1">&raquo;</a>
               </div>
             </div>
-          </a>
-        </li>
-        <li class="list-group-item m-4">
-          <a href="#" style="text-decoration: none; color: inherit">
-            <div style="display: flex; flex-direction: column; height: 100%">
-              <div style="position: relative">
-                <img
-                  src="https://static.wixstatic.com/media/a6694c_75d8524a8fb046db82d0090671364c15~mv2.jpg"
-                  width="250"
-                  height="250"
-                  style="width: 100%; object-fit: cover; border-radius: 20px"
-                  alt=""
-                />
-                <a href="#" class="btn overlay-button">Бърз Преглед</a>
-              </div>
-              <div style="flex-grow: 1; padding: 16px 4px 4px 4px">
-                <p style="margin: 0">
-                  БАЛСАМ ЗА УСТНИ С ЖОЖОБА, КАКАО И ПЧЕЛЕН ВОСЪК
-                </p>
-                <p style="margin: 0">4,00 лв.</p>
-              </div>
-              <div>
-                <a href="#" class="btn"> Добави в количката </a>
-              </div>
-            </div>
-          </a>
-        </li>
-        <li class="list-group-item m-4">
-          <a href="#" style="text-decoration: none; color: inherit">
-            <div style="display: flex; flex-direction: column; height: 100%">
-              <div style="position: relative">
-                <img
-                  src="https://static.wixstatic.com/media/a6694c_40945dc6b1754f74ab2b9331a5d4c692~mv2.jpg"
-                  width="250"
-                  height="250"
-                  style="width: 100%; object-fit: cover; border-radius: 20px"
-                  alt=""
-                />
-                <a href="#" class="btn overlay-button">Бърз Преглед</a>
-              </div>
-              <div style="flex-grow: 1; padding: 16px 4px 4px 4px">
-                <p style="margin: 0">ХИДРАТИРАЩ КРЕМ С ШИПКА</p>
-                <p style="margin: 0">12,00 лв.</p>
-              </div>
-              <div>
-                <a href="#" class="btn"> Добави в количката </a>
-              </div>
-            </div>
-          </a>
-        </li>
-        <li class="list-group-item m-4">
-          <a href="#" style="text-decoration: none; color: inherit">
-            <div style="display: flex; flex-direction: column; height: 100%">
-              <div style="position: relative">
-                <img
-                  src="https://static.wixstatic.com/media/a6694c_9feeef67f1174acb9d05de346a5380f3~mv2.png"
-                  width="250"
-                  height="250"
-                  style="width: 100%; object-fit: cover; border-radius: 20px"
-                  alt=""
-                />
-                <a href="#" class="btn overlay-button">Бърз Преглед</a>
-              </div>
-              <div style="flex-grow: 1; padding: 16px 4px 4px 4px">
-                <p style="margin: 0">НЕЖЕН ЛОСИОН С НЕВЕН</p>
-                <p style="margin: 0">8,00 лв.</p>
-              </div>
-              <div>
-                <a href="#" class="btn"> Добави в количката </a>
-              </div>
-            </div>
-          </a>
-        </li>
-        <li class="list-group-item m-4">
-          <a href="#" style="text-decoration: none; color: inherit">
-            <div style="display: flex; flex-direction: column; height: 100%">
-              <div style="position: relative">
-                <img
-                  src="https://static.wixstatic.com/media/a6694c_c3e384c8ca434dc6b7c2920f660579e3~mv2.png"
-                  width="250"
-                  height="250"
-                  style="width: 100%; object-fit: cover; border-radius: 20px"
-                  alt=""
-                />
-                <a href="#" class="btn overlay-button">Бърз Преглед</a>
-              </div>
-              <div style="flex-grow: 1; padding: 16px 4px 4px 4px">
-                <p style="margin: 0">ДВУФАЗНА МИЦЕЛАРНА ВОДА</p>
-                <p style="margin: 0">10,00 лв.</p>
-              </div>
-              <div>
-                <a href="#" class="btn"> Добави в количката </a>
-              </div>
-            </div>
-          </a>
-        </li>
-        <li class="list-group-item m-4">
-          <a href="#" style="text-decoration: none; color: inherit">
-            <div style="display: flex; flex-direction: column; height: 100%">
-              <div style="position: relative">
-                <img
-                  src="https://static.wixstatic.com/media/a6694c_e95ca1c8158d4caba5b6e7bedaa0eeab~mv2.png"
-                  width="250"
-                  height="250"
-                  style="width: 100%; object-fit: cover; border-radius: 20px"
-                  alt=""
-                />
-                <a href="#" class="btn overlay-button">Бърз Преглед</a>
-              </div>
-              <div style="flex-grow: 1; padding: 16px 4px 4px 4px">
-                <p style="margin: 0">НАТУРАЛЕН КРЕМ ДЕЗОДОРАНТ</p>
-                <p style="margin: 0">8,50 лв.</p>
-              </div>
-              <div>
-                <a href="#" class="btn"> Добави в количката </a>
-              </div>
-            </div>
-          </a>
-        </li>
-        <li class="list-group-item m-4">
-          <a href="#" style="text-decoration: none; color: inherit">
-            <div style="display: flex; flex-direction: column; height: 100%">
-              <div style="position: relative">
-                <img
-                  src="https://static.wixstatic.com/media/a6694c_dcd9e99fe4d44425b1f77612e83ac7c3~mv2.png"
-                  width="250"
-                  height="250"
-                  style="width: 100%; object-fit: cover; border-radius: 20px"
-                  alt=""
-                />
-                <a href="#" class="btn overlay-button">Бърз Преглед</a>
-              </div>
-              <div style="flex-grow: 1; padding: 16px 4px 4px 4px">
-                <p style="margin: 0">СЕРУМ МАСЛО С ШИПКА И ЖОЖОБА</p>
-                <p style="margin: 0">9,00 лв.</p>
-              </div>
-              <div>
-                <a href="#" class="btn"> Добави в количката </a>
-              </div>
-            </div>
-          </a>
-        </li>
-      </ul>
-    </main>
+            <!-- Pagination End-->
+          </div>
+        </div>
+        <!-- Products End-->
+      </div>
+    </div>
+
+    <!-- Back to Top -->
+    <a href="#" class="btn rounded-circle back-to-top"
+      ><i class="fa fa-arrow-up"></i
+    ></a>
   </body>
+  <script src="./js/products.js"></script>
 </html>
