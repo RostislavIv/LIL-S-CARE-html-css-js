@@ -104,6 +104,20 @@ body {
   border-color: rgb(var(--app-btn-bg));
 }
 
+.form-control:focus {
+  box-shadow: none;
+  border-color: rgb(var(--app-color));
+}
+
+.form-select:focus {
+  box-shadow: none;
+}
+
+.form-select {
+  padding: 0;
+  border: none;
+}
+
 header,
 ul {
   padding: 0;
