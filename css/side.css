@@ -90,9 +90,18 @@ body {
   --bs-nav-link-hover-color: rgb(var(--color_41));
 }
 
+.form-check-input {
+  background-color: rgb(var(--app-bg-color));
+  border-color: rgb(var(--app-btn-bg));
+}
+
 .form-check-input:checked {
-  background-color: rgb(var(--color_41));
-  border-color: rgb(var(--color_41));
+  background-color: rgb(var(--app-btn-bg));
+  border-color: rgb(var(--app-btn-bg));
+}
+.form-check-input:focus {
+  box-shadow: none;
+  border-color: rgb(var(--app-btn-bg));
 }
 
 header,
