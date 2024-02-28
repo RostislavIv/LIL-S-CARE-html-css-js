@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css" />
+    <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="./fontawesome/css/all.css" />
+    <script src="./fontawesome/js/all.js"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/side.css" />
+    <link rel="stylesheet" href="./css/checkout.css" />
+  </head>
+  <body>
+    <div class="container p-3">
+      <div class="row g-5 p-3">
+        <!-- Client's data and Delivery address Start -->
+        <div class="col-lg-6">
+          <div
+            class="container p-3 my-4 rounded"
+            style="background-color: rgb(var(--app-bg-secondary))"
+          >
+            <small>
+              Вече имате акаунт?
+              <a style="color: rgb(var(--app-btn-bg))" href="#" target="_blank">
+                Влезте
+              </a>
+              в него за по-бърза поръчка.
+            </small>
+          </div>
+          <form action="/" class="w-100">
+            <!-- Customer and Delivery Details Start -->
+            <div class="d-flex justify-content-between align-items-center">
+              <h5 class="py-4 m-0">Подробности за клиента и доставката</h5>
+              <a
+                style="color: rgb(var(--app-btn-bg)); display: block"
+                href="#"
+                target="_blank"
+              >
+                Редактиране
+              </a>
+            </div>
+            <div style="display: none">
+              <div class="my-2">
+                <label for="email" class="form-label small"
+                  >Имейл за потвърждение на поръчката*</label
+                >
+                <input
+                  for="email"
+                  type="email"
+                  class="form-control"
+                  name="email"
+                />
+              </div>
+              <div class="my-2">
+                <label for="firstName" class="form-label small"
+                  >Собствено име*</label
+                >
+                <input
+                  for="firstName"
+                  type="text"
+                  class="form-control"
+                  name="firstName"
+                />
+              </div>
+              <div class="my-2">
+                <label for="lastName" class="form-label small">Фамилия*</label>
+                <input
+                  for="lastName"
+                  type="text"
+                  class="form-control"
+                  name="lastName"
+                />
+              </div>
+              <div class="my-2">
+                <label for="phoneNumber" class="form-label small"
+                  >Телефон*</label
+                >
+                <input
+                  for="phoneNumber"
+                  type="tel"
+                  class="form-control"
+                  name="phoneNumber"
+                />
+              </div>
+              <h5 class="my-4">Подробности за доставка</h5>
+              <div class="my-2">
+                <label for="country" class="form-label small">Държава*</label>
+                <select class="form-select">
+                  <option>България</option>
+                </select>
+              </div>
+              <div class="my-2">
+                <label for="address" class="form-label small">Адрес*</label>
+                <input
+                  for="address"
+                  type="text"
+                  class="form-control"
+                  name="address"
+                />
+              </div>
+              <div class="my-2">
+                <label for="town" class="form-label small">Град*</label>
+                <input
+                  for="town"
+                  type="text"
+                  class="form-control"
+                  name="town"
+                />
+              </div>
+              <div class="my-2">
+                <label for="district" class="form-label small">Окръг*</label>
+                <select class="form-select">
+                  <option>Благоевград</option>
+                  <option>Бургас</option>
+                  <option>Варна</option>
+                  <option>Велико</option>
+                  <option>Видин</option>
+                  <option>Враца</option>
+                  <option>Габрово</option>
+                  <option>Добрич</option>
+                  <option>Кърджали</option>
+                  <option>Кюстендил</option>
+                  <option>Ловеч</option>
+                  <option>Монтана</option>
+                  <option>Пазарджик</option>
+                  <option>Перник</option>
+                  <option>Плевен</option>
+                  <option>Пловдив</option>
+                  <option>Разград</option>
+                  <option>Русе</option>
+                  <option>Силистра</option>
+                  <option>Сливен</option>
+                  <option>Смолян</option>
+                  <option>София</option>
+                  <option>Софийска област</option>
+                  <option>Стара</option>
+                  <option>Търговище</option>
+                  <option>Хасково</option>
+                  <option>Шумен</option>
+                  <option>Ямбол</option>
+                </select>
+              </div>
+              <div class="my-2">
+                <label for="code" class="form-label small">Пощенски код*</label>
+                <input
+                  for="code"
+                  type="number"
+                  class="form-control"
+                  name="code"
+                />
+              </div>
+              <button
+                type="submit"
+                class="btn btn-primary mt-3"
+                style="width: 100%"
+              >
+                Продължете
+              </button>
+            </div>
+            <div style="display: block">
+              <div class="row" style="opacity: 0.9">
+                <span>Ростислав Иванов</span>
+                <span>rosti@abv.bg</span>
+                <span>улица Петко Д. Петков, Русе, Русе 7000, България</span>
+                <span>0888388164</span>
+              </div>
+            </div>
+            <!-- Customer and Delivery Details End -->
+            <hr />
+            <!-- Delivery Method Start -->
+            <div class="d-flex justify-content-between align-items-center">
+              <h5 class="py-4 m-0">Метод за доставка</h5>
+              <a
+                style="color: rgb(var(--app-btn-bg)); display: block"
+                href="#"
+                target="_blank"
+              >
+                Редактиране
+              </a>
+            </div>
+            <div style="display: none">
+              <select class="form-select">
+                <option>Доставка до адрес - Еконт - 8,50 лв.</option>
+                <option>Доставка до офис Еконт/Спиди - 6,50 лв.</option>
+              </select>
+              <button
+                type="submit"
+                class="btn btn-primary mt-3"
+                style="width: 100%"
+              >
+                Продължете
+              </button>
+            </div>
+            <div style="display: block">
+              <div class="row" style="opacity: 0.9">
+                <div class="d-flex justify-content-between">
+                  <span>До адрес - Еконт</span>
+                  <span> 8,50 лв. </span>
+                </div>
+                <span class="small">2-3 работни дни</span>
+              </div>
+            </div>
+            <!-- Delivery Method End -->
+            <hr />
+            <!-- Confirm Order Start-->
+            <div style="display: block">
+              <p>
+                Прегледайте подробностите за поръчката по-горе и направете
+                поръчката си, когато сте готови.
+              </p>
+              <button
+                type="submit"
+                class="btn btn-primary mt-3"
+                style="width: 100%"
+              >
+                Направете поръчка
+              </button>
+            </div>
+            <!-- Confirm Order End-->
+          </form>
+        </div>
+        <!-- Client's data and Delivery address End -->
+        <!-- Order Summary Start -->
+        <div class="col-lg-6">
+          <div
+            class="container mt-4 px-4 pb-2 rounded"
+            style="background-color: rgb(var(--app-bg-secondary))"
+          >
+            <div class="d-flex justify-content-between align-items-center">
+              <h5 class="py-4 m-0">Резюме на поръчката (4)</h5>
+              <a style="color: rgb(var(--app-btn-bg))" href="#" target="_blank">
+                Редактиране
+              </a>
+            </div>
+
+            <hr class="mt-0" />
+            <!-- Product 1 Start -->
+            <div class="row mb-5">
+              <div class="col-md-5 col-lg-3 col-xl-3">
+                <div class="product-img">
+                  <img
+                    src="./files/products/products-image-01.jpg"
+                    class="img-fluid w-100"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="col-md-7 col-lg-9 col-xl-9 d-flex flex-column">
+                <p>НАТУРАЛЕН СУХ ДЕЗОДОРАНТ</p>
+                <div class="flex-grow-1"></div>
+                <div class="d-flex justify-content-between">
+                  <span>Количество: 2 бр.</span>
+                  <span>
+                    <strong>5,50 лв.</strong>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <!-- Product 1 End -->
+            <!-- Product 2 -->
+            <div class="row mb-5">
+              <div class="col-md-5 col-lg-3 col-xl-3">
+                <div class="product-img">
+                  <img
+                    src="./files/products/products-image-03.jpg"
+                    class="img-fluid w-100"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="col-md-7 col-lg-9 col-xl-9 d-flex flex-column">
+                <p>НАТУРАЛЕН ДЕЗОДОРАНТ</p>
+                <div class="flex-grow-1"></div>
+                <div class="d-flex justify-content-between">
+                  <span>Количество: 3 бр.</span>
+                  <span>
+                    <strong>15,50 лв.</strong>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <!-- Product 2 End -->
+            <!-- Promo Code Start -->
+            <div style="display: none">
+              <a
+                href="#"
+                class="nav-link"
+                data-bs-toggle="collapse"
+                data-bs-target="#promo-code"
+                ><i class="fa-solid fa-tag me-1"></i>Въведете промо код
+              </a>
+              <div id="promo-code" class="collapse">
+                <input
+                  for="promo-code"
+                  type="text"
+                  class="form-control my-1"
+                  name="promo-code"
+                  placeholder="напр.SUMMERSALE20"
+                />
+                <a href="#" class="btn w-100 my-2">Приложи</a>
+              </div>
+            </div>
+            <div style="display: block">
+              <div class="d-flex justify-content-between">
+                <span>Промо код</span>
+                <span>
+                  <strong>-10,00 лв.</strong>
+                </span>
+              </div>
+            </div>
+            <!-- Promo Code Start -->
+            <hr />
+            <!-- Subtotal Start -->
+            <div class="d-flex justify-content-between mb-3">
+              <span>Междинна сума</span>
+              <span class="mb-0">
+                <strong>15,50 лв.</strong>
+              </span>
+            </div>
+            <!-- Subtotal End -->
+            <!-- Delivery Start -->
+            <div class="d-flex justify-content-between mb-3">
+              <span>Доставка</span>
+              <span class="mb-0">
+                <strong>6,50 лв.</strong>
+              </span>
+            </div>
+            <!-- Delivery End -->
+            <hr />
+            <!-- Total Price Start -->
+            <div class="d-flex justify-content-between my-3 fs-4">
+              <span>Общо :</span>
+              <span>15,50 лв.</span>
+            </div>
+            <!-- Total Price End -->
+          </div>
+        </div>
+        <!-- Order Summary End -->
+      </div>
+    </div>
+  </body>
+</html>

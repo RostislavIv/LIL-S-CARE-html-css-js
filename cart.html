@@ -19,6 +19,7 @@
   <body>
     <div class="container">
       <div class="row">
+        <!-- My Order Start-->
         <div class="col-lg-8">
           <h5 class="my-4">Моята количка</h5>
           <hr class="my-4" />
@@ -55,9 +56,24 @@
             </div>
           </div>
           <hr class="mb-4" />
-          <a href="#" class="nav-link mb-4"
-            ><i class="fa-solid fa-tag me-2"></i>Въведете промо код
+          <a
+            href="#"
+            class="nav-link mb-4"
+            data-bs-toggle="collapse"
+            data-bs-target="#promo-code"
+            ><i class="fa-solid fa-tag me-1"></i>Въведете промо код
           </a>
+          <div id="promo-code" class="collapse w-50">
+            <input
+              for="promo-code"
+              type="text"
+              class="form-control my-1"
+              name="promo-code"
+              placeholder="напр.SUMMERSALE20"
+            />
+            <a href="#" class="btn w-100 my-2">Приложи</a>
+          </div>
+
           <a
             href="#"
             class="nav-link mb-4"
@@ -76,6 +92,8 @@
             ></textarea>
           </div>
         </div>
+        <!-- My Order End -->
+        <!-- Order Summary Start-->
         <div class="col-lg-4">
           <h5 class="my-4">Резюме на поръчката</h5>
           <hr class="my-4" />
@@ -83,9 +101,11 @@
             <span>Междина сума :</span>
             <span><strong>5,50 лв.</strong></span>
           </div>
-          <div class="d-flex justify-content-between my-3">
-            <span>Промо код :</span>
-            <span><strong>-10,00 лв.</strong></span>
+          <div style="display: block">
+            <div class="d-flex justify-content-between my-3">
+              <span>Промо код :</span>
+              <span><strong>-10,00 лв.</strong></span>
+            </div>
           </div>
           <div class="d-flex justify-content-between my-3">
             <form class="w-75">
@@ -103,6 +123,7 @@
           </div>
           <a href="#" class="btn btn-primary w-100 mt-4">Закупуване</a>
         </div>
+        <!-- Order Summary End -->
       </div>
     </div>
   </body>

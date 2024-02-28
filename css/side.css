@@ -111,11 +111,7 @@ body {
 
 .form-select:focus {
   box-shadow: none;
-}
-
-.form-select {
-  padding: 0;
-  border: none;
+  border-color: inherit;
 }
 
 header,
