@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css" />
+    <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="./fontawesome/css/all.css" />
+    <script src="./fontawesome/js/all.js"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/side.css" />
+  </head>
+  <body>
+    <div class="d-flex justify-content-center my-4">
+      <!-- Add/Edit Address Start -->
+      <form action="/" class="w-50 border rounded p-3">
+        <h5 class="py-3 m-0">Добавяне на нов адрес</h5>
+        <hr />
+        <!-- First Name Start -->
+        <div class="my-2">
+          <label for="firstName" class="form-label small">Собствено име*</label>
+          <input
+            for="firstName"
+            type="text"
+            class="form-control"
+            name="firstName"
+          />
+        </div>
+        <!-- First Name End -->
+        <!-- Last Name Start -->
+        <div class="my-2">
+          <label for="lastName" class="form-label small">Фамилия*</label>
+          <input
+            for="lastName"
+            type="text"
+            class="form-control"
+            name="lastName"
+          />
+        </div>
+        <!-- Last Name End -->
+        <!-- Phone Number Start -->
+        <div class="my-2">
+          <label for="phoneNumber" class="form-label small">Телефон*</label>
+          <input
+            for="phoneNumber"
+            type="tel"
+            class="form-control"
+            name="phoneNumber"
+          />
+        </div>
+        <!-- Phone Number End -->
+        <!-- Address Start -->
+        <div class="my-2">
+          <label for="address" class="form-label small">Адрес*</label>
+          <input
+            for="address"
+            type="text"
+            class="form-control"
+            name="address"
+          />
+        </div>
+        <!-- Address End -->
+        <!-- City Start -->
+        <div class="my-2">
+          <label for="town" class="form-label small">Град*</label>
+          <input for="town" type="text" class="form-control" name="town" />
+        </div>
+        <!-- City End -->
+        <!-- District Start -->
+        <div class="my-2">
+          <label for="district" class="form-label small">Окръг*</label>
+          <select class="form-select">
+            <option>Благоевград</option>
+            <option>Бургас</option>
+            <option>Варна</option>
+            <option>Велико</option>
+            <option>Видин</option>
+            <option>Враца</option>
+            <option>Габрово</option>
+            <option>Добрич</option>
+            <option>Кърджали</option>
+            <option>Кюстендил</option>
+            <option>Ловеч</option>
+            <option>Монтана</option>
+            <option>Пазарджик</option>
+            <option>Перник</option>
+            <option>Плевен</option>
+            <option>Пловдив</option>
+            <option>Разград</option>
+            <option>Русе</option>
+            <option>Силистра</option>
+            <option>Сливен</option>
+            <option>Смолян</option>
+            <option>София</option>
+            <option>Софийска област</option>
+            <option>Стара</option>
+            <option>Търговище</option>
+            <option>Хасково</option>
+            <option>Шумен</option>
+            <option>Ямбол</option>
+          </select>
+        </div>
+        <!-- District End -->
+        <!-- Country Start -->
+        <div class="my-2">
+          <label for="country" class="form-label small">Държава*</label>
+          <select class="form-select">
+            <option>България</option>
+          </select>
+        </div>
+        <!-- Country End -->
+        <!-- Postal Code Start -->
+        <div class="my-2">
+          <label for="code" class="form-label small">Пощенски код*</label>
+          <input for="code" type="number" class="form-control" name="code" />
+        </div>
+        <!-- Postal Code End -->
+        <!-- Set as Default Address Start -->
+        <div class="my-4">
+          <input
+            type="checkbox"
+            class="form-check-input"
+            id="default"
+            name="default"
+            value="default"
+          />
+          <label for="default" class="form-label small"
+            >Направете това моя адрес по подразбиране</label
+          >
+        </div>
+        <!-- Set as Default Address End -->
+        <!-- Save Address Start -->
+        <button type="submit" class="btn">Запази адреса</button>
+        <!-- Save Address End -->
+        <!-- Cancel Start -->
+        <button type="submit" class="btn ms-3">Отказ</button>
+        <!-- Cancel End -->
+      </form>
+      <!-- Add/Edit Address End -->
+    </div>
+  </body>
+</html>
