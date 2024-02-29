@@ -41,7 +41,7 @@
           <div class="col-2"><strong>Общо</strong></div>
         </div>
         <hr class="mb-0" />
-        <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion accordion-flush" id="accordion-orders">
           <!-- Order 1 Start -->
           <div class="accordion-item">
             <h2 class="accordion-header">
@@ -49,9 +49,9 @@
                 class="accordion-button collapsed px-0"
                 type="button"
                 data-bs-toggle="collapse"
-                data-bs-target="#flush-collapseOne"
+                data-bs-target="#order-id-01"
                 aria-expanded="false"
-                aria-controls="flush-collapseOne"
+                aria-controls="order-id-01"
               >
                 <div class="col-3">15.12.2023 г.</div>
                 <div class="col-3">#10019</div>
@@ -60,10 +60,11 @@
               </button>
             </h2>
             <div
-              id="flush-collapseOne"
+              id="order-id-01"
               class="accordion-collapse collapse"
-              data-bs-parent="#accordionFlushExample"
+              data-bs-parent="#accordion-orders"
             >
+              <!-- Order Summary Start -->
               <div class="accordion-body border rounded">
                 <!-- Product 1 Start -->
                 <div class="row mb-5">
@@ -148,18 +149,25 @@
                 </div>
                 <!-- Total Price End -->
                 <hr />
+                <!-- Speditor Start -->
                 <div class="d-flex justify-content-between">
                   <span>Доставчик :</span>
                   <span>До офис Еконт / Спиди</span>
                 </div>
+                <!-- Speditor End -->
+                <!-- Bill of Lading Start -->
                 <div class="d-flex justify-content-between mt-3">
                   <span>Товарителница :</span>
                   <span>#464548764</span>
                 </div>
+                <!-- Bill of Lading End -->
+                <!-- Date Start -->
                 <div class="d-flex justify-content-between mt-3">
                   <span>Дата :</span>
                   <span>23.12.2023</span>
                 </div>
+                <!-- Date End -->
+                <!-- Address Start -->
                 <div class="d-flex justify-content-between mt-3">
                   <span>Адрес за доставка :</span>
                   <div style="text-align: right">
@@ -170,7 +178,9 @@
                     <p class="mb-0">0888388164</p>
                   </div>
                 </div>
+                <!-- Address End -->
               </div>
+              <!-- Order Summary End -->
             </div>
           </div>
           <!-- Order 1 End -->
@@ -181,9 +191,9 @@
                 class="accordion-button collapsed px-0"
                 type="button"
                 data-bs-toggle="collapse"
-                data-bs-target="#flush-collapseTwo"
+                data-bs-target="#order-id-02"
                 aria-expanded="false"
-                aria-controls="flush-collapseTwo"
+                aria-controls="order-id-02"
               >
                 <div class="col-3">15.12.2023 г.</div>
                 <div class="col-3">#10019</div>
@@ -192,9 +202,9 @@
               </button>
             </h2>
             <div
-              id="flush-collapseTwo"
+              id="order-id-02"
               class="accordion-collapse collapse"
-              data-bs-parent="#accordionFlushExample"
+              data-bs-parent="#accordion-orders"
             >
               <div class="accordion-body border rounded">
                 <!-- Product 1 Start -->
@@ -308,7 +318,7 @@
           <!-- Order 2 End -->
         </div>
       </div>
-      <!-- Order Summary End -->
+      <!--My Orders End -->
     </div>
   </body>
 </html>
