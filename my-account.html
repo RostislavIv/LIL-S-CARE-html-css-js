@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css" />
+    <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="./fontawesome/css/all.css" />
+    <script src="./fontawesome/js/all.js"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/side.css" />
+
+    <!-- Load account.html into the #account div -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(function () {
+        $("#account").load("account.html");
+      });
+    </script>
+  </head>
+  <body>
+    <div class="d-flex justify-content-center">
+      <!-- Menu My Account Start-->
+      <div id="account"></div>
+      <!-- Menu My Account  End -->
+      <!-- My My Account Start-->
+      <div class="border rounded p-3" style="margin: 50px 100px 20px 20px">
+        <h5 class="my-4">Моят акаунт</h5>
+        <p>Редактирай акаунта си по долу.</p>
+        <hr />
+        <!-- Edit Account Start -->
+        <form action="/" class="border rounded p-3">
+          <!-- Email Login Start -->
+          <div class="my-2">
+            <label for="email" class="form-label small"
+              >Имейла за вход не може да бъде променян</label
+            >
+            <input
+              for="email"
+              type="email"
+              class="form-control"
+              name="email"
+              placeholder="rosti@abv.bg"
+              readonly
+            />
+          </div>
+          <!-- Email Login End -->
+          <!-- First Name Start -->
+          <div class="my-2">
+            <label for="firstName" class="form-label small"
+              >Собствено име*</label
+            >
+            <input
+              for="firstName"
+              type="text"
+              class="form-control"
+              name="firstName"
+            />
+          </div>
+          <!-- First Name End -->
+          <!-- Last Name Start -->
+          <div class="my-2">
+            <label for="lastName" class="form-label small">Фамилия*</label>
+            <input
+              for="lastName"
+              type="text"
+              class="form-control"
+              name="lastName"
+            />
+          </div>
+          <!-- Last Name End -->
+          <!-- Phone Number Start -->
+          <div class="my-2">
+            <label for="phoneNumber" class="form-label small">Телефон*</label>
+            <input
+              for="phoneNumber"
+              type="tel"
+              class="form-control"
+              name="phoneNumber"
+            />
+          </div>
+          <!-- Phone Number End -->
+          <!-- Image Upload Start -->
+          <div class="mt-2 mb-4">
+            <label for="image" class="form-label small">Качи снимка</label>
+            <input id="image" type="file" class="form-control" name="image" />
+          </div>
+          <!-- Image Upload End -->
+          <!-- Save Changes Start -->
+          <button type="submit" class="btn">Запази</button>
+          <!-- Save Changes End -->
+          <!-- Cancel Start -->
+          <a href="#" class="btn ms-3">Отказ</a>
+          <!-- Cancel End -->
+        </form>
+        <!-- Edit Account Еnd -->
+      </div>
+      <!--My My Account End -->
+    </div>
+  </body>
+</html>
