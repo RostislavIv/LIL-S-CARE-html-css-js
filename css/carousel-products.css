@@ -15,6 +15,9 @@
 }
 
 .vesitable .vesitable-item .vesitable-img img {
+  height: 350px;
+  object-fit: cover;
+  object-position: 0% 50%;
   transition: 0.5s;
 }
 

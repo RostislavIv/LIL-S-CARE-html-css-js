@@ -23,10 +23,20 @@
         $("#carousel-products").load("carousel-products.html");
       });
     </script>
+    <!-- Load shopping-bag.html into the #shopping-bag div -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(function () {
+        $("#bag").load("shopping-bag.html");
+      });
+    </script>
   </head>
 
   <body>
     <main>
+      <!-- Offcanvas Shopping Bag Start -->
+      <div id="bag"></div>
+      <!-- Offcanvas Shopping Bag End -->
       <!-- Carousel Start-->
       <section id="carouselId">
         <div
