@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css" />
+    <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="./fontawesome/css/all.css" />
+    <script src="./fontawesome/js/all.js"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/side.css" />
+
+    <!-- Load account.html into the #account div -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(function () {
+        $("#account").load("account.html");
+      });
+    </script>
+  </head>
+  <body>
+    <div class="d-flex justify-content-center">
+      <!-- Menu My Account Start-->
+      <div id="account"></div>
+      <!-- Menu My Account  End -->
+      <!-- My Addresses Start-->
+      <div class="border rounded p-3" style="margin: 50px 100px 20px 20px">
+        <h5 class="my-4">Моите адреси</h5>
+        <p>Добави и управлявай адресите, които ползваш често</p>
+        <hr />
+        <!-- Add/Edit Address Start -->
+        <div>
+          <p class="mb-0">Ростислав Иванов</p>
+          <p class="mb-0">ул. Петко Д. Петков</p>
+          <p class="mb-0">Русе, Русе Русе</p>
+          <p class="mb-0">България</p>
+          <p class="mb-0">0888388164</p>
+          <div class="d-flex justify-content-start my-3">
+            <button class="btn btn-sm">Редактирай</button>
+            <button class="btn btn-sm ms-3">Изтрий</button>
+            <div style="display: none">
+              Адрес по подразбиране
+              <i class="fa fa-check ms-2"></i>
+            </div>
+          </div>
+          <div style="display: block">
+            Адрес по подразбиране
+            <i class="fa fa-check ms-2"></i>
+          </div>
+          <a href="#" style="display: none; color: rgb(var(--app-btn-bg))">
+            Направете това моя адрес по подразбиране
+          </a>
+          <hr />
+        </div>
+        <!-- Add/Edit Address Start -->
+        <!-- Add/Edit Address Start -->
+        <div>
+          <p class="mb-0">Ростислав Иванов</p>
+          <p class="mb-0">ул. Петко Д. Петков</p>
+          <p class="mb-0">Русе, Русе Русе</p>
+          <p class="mb-0">България</p>
+          <p class="mb-0">0888388164</p>
+          <div class="d-flex justify-content-start my-3">
+            <button class="btn btn-sm">Редактирай</button>
+            <button class="btn btn-sm ms-3">Изтрий</button>
+            <div style="display: none">
+              Адрес по подразбиране
+              <i class="fa fa-check ms-2"></i>
+            </div>
+          </div>
+          <div style="display: none">
+            Адрес по подразбиране
+            <i class="fa fa-check ms-2"></i>
+          </div>
+          <a href="#" style="display: block; color: rgb(var(--app-btn-bg))">
+            Направете това моя адрес по подразбиране
+          </a>
+          <hr />
+        </div>
+        <!-- Add/Edit Address Start -->
+        <button class="btn">Добави адрес</button>
+      </div>
+      <!--My Addresses End -->
+    </div>
+  </body>
+</html>
