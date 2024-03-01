@@ -6,6 +6,29 @@ body {
   --bs-body-font-weight: normal;
 }
 
+.dropdown-menu {
+  box-shadow: none;
+}
+
+.dropdown-item {
+  --bs-dropdown-link-color: rgb(var(--app-color));
+  --bs-dropdown-link-hover-color: rgb(var(--app-btn-bg));
+  --bs-dropdown-link-active-color: rgb(var(--app-btn-bg));
+  --bs-dropdown-link-font-size: 14px;
+}
+
+.navbar {
+  --bs-navbar-active-color: rgb(var(--app-btn-bg));
+}
+
+.nav-link {
+  padding: 0;
+  --bs-nav-link-color: rgb(var(--app-color));
+  --bs-nav-link-hover-color: rgb(var(--app-btn-bg));
+  --bs-nav-link-active-color: rgb(var(--app-btn-bg));
+  --bs-nav-link-font-size: 14px;
+}
+
 .bg-secondary {
   --bs-bg-opacity: 1;
   background-color: rgb(var(--color_16), var(--bs-bg-opacity)) !important;
@@ -84,12 +107,6 @@ body {
   opacity: 0.7;
 }
 
-.nav-link {
-  padding: 0;
-  --bs-nav-link-color: rgb(var(--color_37));
-  --bs-nav-link-hover-color: rgb(var(--color_41));
-}
-
 .form-check-input {
   background-color: rgb(var(--app-bg-color));
   border-color: rgb(var(--app-btn-bg));
@@ -112,36 +129,6 @@ body {
 .form-select:focus {
   box-shadow: none;
   border-color: inherit;
-}
-
-header,
-ul {
-  padding: 0;
-  margin: 0;
-}
-
-header #discount p {
-  text-align: center;
-  padding: 0;
-  color: rgb rgb(var(--color_15));
-  font-size: 13px;
-  letter-spacing: 0.2em;
-  background-color: rgb(var(--color_43));
-}
-
-header #discount p {
-  margin-bottom: 0px;
-}
-
-header .d-flex {
-  padding: 20px 5% 20px 5%;
-}
-
-header #nav {
-  font: var(--font_9);
-  --bs-navbar-hover-color: rgb(var(--color_41));
-  --bs-navbar-active-color: rgb(var(--color_41));
-  --bs-navbar-toggler-border-color: rgb(var(--color_41));
 }
 
 header nav ul li {
