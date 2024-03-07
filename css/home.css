@@ -1,7 +1,6 @@
 #carouselId .carousel-caption {
-  font: var(--font_7);
-  color: rgb(var(--color_2));
-  background-color: rgb(var(--color_1));
+  color: black;
+  background-color: white;
   opacity: 0.6;
   width: 500px;
   height: 160px;
