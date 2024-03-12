@@ -1,4 +1,4 @@
-#carouselId .carousel-caption {
+.carousel-caption {
   font: var(--font_7);
   color: rgb(var(--color_2));
   background-color: rgb(var(--color_1));
@@ -13,7 +13,7 @@
   transition: top 2s;
 }
 
-#carouselId .carousel-caption.show {
+.carousel-caption.show {
   top: 5%;
   transition: top 2s;
 }
